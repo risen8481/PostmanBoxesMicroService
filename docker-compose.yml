@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  postmanboxesmicroservice:
+    image: ${DOCKER_REGISTRY-}postmanboxesmicroservice
+    build:
+      context: .\PostmanBoxesMicroService
+      dockerfile: Dockerfile
